@@ -1,0 +1,70 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width: 1200px;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+}
+.container {
+    background-color: #fdc002;
+    margin-top: 250px;
+}
+header {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #24272d;
+    color:  whitesmoke;
+}
+
+header p {
+    position: relative;
+    top: 16px;
+
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#inputForm {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;    
+}
+
+.title {
+    text-align:left;
+    margin-left: 20px;
+}
+
+.information {
+    text-align: start;
+    padding: 20px;
+}
+
+.submit:hover {
+    background-color: #24272d;
+    color: whitesmoke;
+}
+
+#firstPeriod {
+    box-shadow: 5px 5px 0px -1px #000000;
+}
+
+#secondPeriod {
+    box-shadow: 5px 5px 0px -1px #000000;
+}
+.yearInput {
+    box-shadow: 5px 5px 0px -1px #000000;
+}

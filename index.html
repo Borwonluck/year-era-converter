@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แปลงศักราช<title>
+    <link rel="stylesheet" href="/decorate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body id="main">
+    <div class="container">
+        <header>
+            <h1>โปรแกรมแปลงปีศักราช</h1>
+            <p><strong>ส่งโครงการเพื่อรับ Basic Certificate ของ BorntoDeV</strong>
+        </header>
+
+        <h3>เลือกปีศักราชที่ต้องการจะแปลง </h3>
+
+
+            <div class="form">
+                <script src="/app.js"></script>
+
+                <form id="inputForm">
+                    <span><strong>ปี</strong></span>
+                    <select name="firstPeriod" id="firstPeriod">
+                        <option value="buddha">พุทธศักราช</option>
+                        <option value="christ">คริสตศักราช</option>
+                        <option value="hallah">ฮิจเราะห์ศักราช</option>
+                        <option value="maha">มหาศักราช</option>
+                        <option value="jul">จุลศักราช</option>
+                        <option value="rattana">รัตนโกสินทร์ศก</option>
+                    </select>
+                    <span><strong>ที่</strong></span> <input type="number" name="year" id="year" class="yearInput" min="0" max="10000">
+                    <span><strong>แปลงเป็นปี</strong></span>
+                    <select name="secondPeriod" id="secondPeriod">
+                        <option value="buddha">พุทธศักราช</option>
+                        <option value="christ">คริสต์ศักราช</option>
+                        <option value="hallah">ฮิจเราะห์ศักราช</option>
+                        <option value="maha">มหาศักราช</option>
+                        <option value="jul">จุลศักราช</option>
+                        <option value="rattana">รัตนโกสินทร์ศก</option>
+                    </select>
+                    <input type="submit" value="ประมวลผล" onclick="callYear()" class="submit">
+                </form>
+            </div>
+
+        <article>
+            <section id="history">
+                <p class="title"><strong>ศักราชที่ใช้กันในปัจจุบันมีดังนี้</strong></p>
+                <p class="information">
+                &nbsp;&nbsp;<strong>1. พุทธศักราช (พ.ศ.)</strong> ตั้งขึ้นเมื่อองค์สมเด็จพระสัมมาสัมพุทธเจ้าเสด็จดับขันธปรินิพพานแล้ว
+                นับปีนั้นเป็นปี
+                <br>
+                พ.ศ. 1 (แต่พม่า, ลังกา นับเริ่มพ.ศ. ก่อนพระพุทธเจ้าปรินิพพาน 1 ปี ฉนั้นจึงมี พ.ศ. มากกว่าเรา 1 ปี) <br>
+                &nbsp;&nbsp;<strong>2. คริสต์ศักราช (ค.ศ.)</strong> นับตั้งแต่วันที่พระเยซูคริสต์ประสูตร หลังจาก พ.ศ. นับมาแล้ว 543 ปี
+                <br>
+                &nbsp;&nbsp;<strong>3. ฮิจเราะห์ศักราช (ฮ.ศ.)</strong> ฮิจเราะห์มาจากภาษาอาหรับ แปลว่า การอพยพ
+                เป็นการนับศักราชในประเทศที่มี <br> การนับถือศาสนาอิสลามโดยเริ่มนับ ฮ.ศ. 1
+                เมื่อท่านนบีมูฮัมหมัดนำเหล่าสาวกอพยพจากเมืองเมกกะไปยังเมืองเมดินา <br>
+                &nbsp;&nbsp;<strong>4. มหาศักราช (ม.ศ.)</strong> ตั้งขึ้นในวันที่พระเจ้าศาลิวาหนะ ทรงมีชัยต่ออริราชศัตรู เกิดขึ้นหลัง
+                พ.ศ. 622 ปี
+                <br>
+                &nbsp;&nbsp;<strong>5. จุลศักราช (จ.ศ.)</strong> ตั้งขึ้นเมื่อกษัตริย์พม่าพระนามว่า สังฆราชมุนโสรหัน <br>
+                ซึ่งได้ลาสิกขาออกมาชิงเอาราชสมบัติสำเร็จ เกิดหลัง พ.ศ. 1181 ปี <br>
+                &nbsp;&nbsp;<strong>6. รัตนโกสินทร์ศก (ร.ศ.)</strong> ตั้งขึ้นในสมัยรัชการที่ 5 แห่งราชวงศ์จักรี
+                โดยถือเอาวันที่พระพุทธยอดฟ้าจุฬาโลก
+                <br>
+                รัชการที่ 1 แห่งราชวงศ์จักรี สร้างกรุงเทพฯเป็นมหานคร เกิดหลัง พ.ศ. 2325 ปี
+                </p>
+            </section>
+        </article>
+    </div>
+</body>
+
+</html>
